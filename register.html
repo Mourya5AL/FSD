@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        table tr td {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+        fieldset {
+            width: 500px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+    <script defer src="register.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Registration</h1>
+    </div>
+    <div id="content">
+        <div id="container">
+            <form name="frm" method="POST" action="login.html" onsubmit="return validate()">
+                <fieldset>
+                    <table align="center">
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text" name="fname" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td><input type="text" name="lname" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Phone No:</td>
+                            <td><input type="text" name="phone" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Mail id:</td>
+                            <td><input type="email" name="mailid" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <label><input type="radio" name="gender" value="male"> Male</label>
+                                <label><input type="radio" name="gender" value="female"> Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DOB:</td>
+                            <td><input type="date" name="dob" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Age:</td>
+                            <td><input type="text" name="age" required /></td>
+                        </tr>
+                        <tr>
+                            <td>UserName:</td>
+                            <td><input type="text" name="uname" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="pwd" required /></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="SUBMIT" name="submit" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="footer">Copyright &copy; 2025</div>
+</body>
+</html>
